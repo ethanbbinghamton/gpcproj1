@@ -1,5 +1,3 @@
 #!/bin/bash
-echo woah
-echo waaa
-echo hahah
-echo nahhh
+mongod --dbpath /data/db --logpath /var/log/mongodb/mongod.log --bind_ip 0.0.0.0 --fork
+mongosh --port 27017
